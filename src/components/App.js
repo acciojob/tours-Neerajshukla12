@@ -55,7 +55,9 @@ const toursData = [
       </div>
     );
   }
-  return <Tours tours={tours} setTours={setTours}/>;
+  return <main>
+  <Tours tours={tours} setTours={setTours}/>;
+  </main>
 }
 
 export default App
