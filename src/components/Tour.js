@@ -18,10 +18,10 @@ function Tour({ id, name, image, price, description, setTours }) {
 
       <p id="see-more-rec6d6T3q5EBIdCfD">
         {showMore ? description : description.slice(0, 200)}
+      </p>
         <button onClick={() => setShowMore(!showMore)}>
           {showMore ? "See less" : "See more"}
         </button>
-      </p>
 
       <button
         id="delete-btn-rec6d6T3q5EBIdCfD"
