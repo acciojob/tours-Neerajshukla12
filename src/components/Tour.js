@@ -1,27 +1,24 @@
 import React, { useState } from "react";
+import Tours from "./Tours";
 
 
-const Tour = ({ item, handleRemove }) => {
+function Tour({ id, name, image, price, description, removeTour }) {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div style={{ marginBottom: "30px" }}>
-      <h2>{item.name}</h2>
-      <img src={item.image} alt={item.name} width="300" />
-      <p>Price: ${item.price}</p>
-
+    <article style={{ border: "1px solid #ccc", margin: "20px", padding: "20px" }}>
+      <img src={image} alt={name} width="300" />
+      <h3>{name}</h3>
+      <h4>${price}</h4>
       <p>
-        {showMore
-          ? item.description
-          : `${item.description.substring(0, 200)}...`}
+        {showMore ? description : `${description.substring(0, 200)}...`}
         <button onClick={() => setShowMore(!showMore)}>
-          {showMore ? " See less" : " Show more"}
+          {showMore ? "See less" : "Show more"}
         </button>
       </p>
-
-      <button onClick={() => handleRemove(item.id)}>Remove</button>
-    </div>
+      <button onClick={() => removeTour(id)}>Remove</button>
+    </article>
   );
-};
+}
 
-export default Tour;
+export default Tour
