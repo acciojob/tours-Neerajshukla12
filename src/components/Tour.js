@@ -13,7 +13,7 @@ function Tour({ id, name, image, price, description,setTours}) {
       <img src={image} alt={name} width="300" />
       <h3>{name}</h3>
       <h4>${price}</h4>
-      <p>
+      <p id="see-more-rec6d6T3q5EBIdCfD">
         {showMore ? description : `${description.slice(0, 200)}...`}
         <button onClick={() => setShowMore(!showMore)}>
           {showMore ? "See less" : "Show more"}
