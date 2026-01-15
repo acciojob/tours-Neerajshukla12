@@ -9,7 +9,7 @@ const toursData = [
     image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
     price: 1200,
     description:
-      "Paris is the capital city of France, known for its art, fashion, gastronomy and culture. The city is home to iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral asdfghjkasdfghjksdfghjkdfghjkdfghjksdfhj."
+      "Paris is the capital city of France, known for its art, fashion, gastronomy and culture. The city is home to iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral."
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const toursData = [
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
     price: 1800,
     description:
-      "The Maldives is a tropical paradise known for its crystal-clear waters, white sandy beaches, and luxury resorts. It is a perfect destination for relaxation and water sports ghjksdfghjdfghjdfghjdfgh dfghjfghjkdfgh dfghjdfghjk."
+      "The Maldives is a tropical paradise known for its crystal-clear waters, white sandy beaches, and luxury resorts. It is a perfect destination for relaxation and water sports."
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const toursData = [
     image: "https://images.unsplash.com/photo-1528701800489-20be3cfa64d4",
     price: 1500,
     description:
-      "Dubai is a modern city famous for luxury shopping, ultramodern architecture, and lively nightlife scene. Burj Khalifa, the tallest building in the world, is its main attraction dfghjdfghjwertyuiopasdfghjkl zxcvbnm."
+      "Dubai is a modern city famous for luxury shopping, ultramodern architecture, and lively nightlife scene. Burj Khalifa, the tallest building in the world, is its main attraction."
   }
 ];
 
