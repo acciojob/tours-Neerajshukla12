@@ -55,7 +55,7 @@ const toursData = [
       </div>
     );
   }
-  return <main>
+  return <main id="main">
   <Tours tours={tours} setTours={setTours}/>;
   </main>
 }
