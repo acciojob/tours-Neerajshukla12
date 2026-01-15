@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import Tours from "./Tours";
 
 
-function Tour({ id, name, image, price, description, removeTour }) {
+function Tour({ id, name, image, price, description,setTours}) {
   const [showMore, setShowMore] = useState(false);
+
+  const removeTour = (id) => {
+    setTours((prev) => prev.filter((tour) => tour.id !== id));
+  };
 
   return (
     <article style={{ border: "1px solid #ccc", margin: "20px", padding: "20px" }}>
@@ -11,7 +14,7 @@ function Tour({ id, name, image, price, description, removeTour }) {
       <h3>{name}</h3>
       <h4>${price}</h4>
       <p>
-        {showMore ? description : `${description.substring(0, 200)}...`}
+        {showMore ? description : `${description.slice(0, 200)}...`}
         <button onClick={() => setShowMore(!showMore)}>
           {showMore ? "See less" : "Show more"}
         </button>
