@@ -9,7 +9,7 @@ function Tour({ id, name, image, price, description,setTours}) {
   };
 
   return (
-    <article style={{ border: "1px solid #ccc", margin: "20px", padding: "20px" }}>
+    <article id="tour-item-para-rec6d6T3q5EBIdCfD" style={{ border: "1px solid #ccc", margin: "20px", padding: "20px" }}>
       <img src={image} alt={name} width="300" />
       <h3>{name}</h3>
       <h4>${price}</h4>
@@ -19,7 +19,7 @@ function Tour({ id, name, image, price, description,setTours}) {
           {showMore ? "See less" : "Show more"}
         </button>
       </p>
-      <button onClick={() => removeTour(id)}>Remove</button>
+      <button id="delete-btn-rec6d6T3q5EBIdCfD" onClick={() => removeTour(id)}>Remove</button>
     </article>
   );
 }
